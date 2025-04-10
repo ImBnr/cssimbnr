@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodzaje Selektorów w CSS</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .level-1 {
+            font-weight: bold;
+        }
+        .level-2 {
+            font-style: italic;
+        }
+        .level-3 {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rodzaje Selektorów w CSS</h1>
+
+    <h2>1. Selektory proste</h2>
+    <ul>
+        <li class="level-1">Selektor typu
+            <ul>
+                <li class="level-2">Przykład: <code>p { color: red; }</code></li>
+                <li class="level-2">Stosowany do elementów określonego typu, np. akapity, nagłówki.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2. Selektory złożone</h2>
+    <ul>
+        <li class="level-1">Selektor uniwersalny
+            <ul>
+                <li class="level-2">Przykład: <code>* { color: red; }</code></li>
+                <li class="level-2">Dotyczy wszystkich elementów na stronie.</li>
+            </ul>
+        </li>
+        <li class="level-1">Selektor potomka
+            <ul>
+                <li class="level-2">Przykład: <code>p b { color: red; }</code></li>
+                <li class="level-2">Dotyczy elementów potomnych znajdujących się wewnątrz innych elementów.</li>
+                <ul>
+                    <li class="level-3">Przykład zastosowania: <code><p><b>tekst</b></p></code></li>
+                </ul>
+            </ul>
+        </li>
+        <li class="level-1">Selektor dziecka
+            <ul>
+                <li class="level-2">Przykład: <code>p > span { color: red; }</code></li>
+                <li class="level-2">Dotyczy tylko bezpośrednich dzieci danego elementu.</li>
+            </ul>
+        </li>
+        <li class="level-1">Selektor rodzeństwa
+            <ul>
+                <li class="level-2">Przykład: <code>p + span { color: red; }</code></li>
+                <li class="level-2">Dotyczy elementów, które są bezpośrednio sąsiadami innych elementów.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. Selektory atrybutów</h2>
+    <ul>
+        <li class="level-1">Selektor prosty atrybutu
+            <ul>
+                <li class="level-2">Przykład: <code>p[title] { color: red; }</code></li>
+                <li class="level-2">Dotyczy elementów posiadających określony atrybut.</li>
+            </ul>
+        </li>
+        <li class="level-1">Selektor atrybutu z kilkoma warunkami
+            <ul>
+                <li class="level-2">Przykład: <code>p[title][lang] { color: red; }</code></li>
+                <li class="level-2">Dotyczy elementów, które posiadają wszystkie określone atrybuty.</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>

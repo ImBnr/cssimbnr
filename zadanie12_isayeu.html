@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jednostki Miary w CSS</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        p {
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .unit-name {
+            font-weight: bold;
+        }
+        .unit-description {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jednostki Miary w CSS</h1>
+
+    <h2>1. Jednostki miary długości</h2>
+    <ul>
+        <li><span class="unit-name">px</span> – <span class="unit-description">piksele (jednostka absolutna)</span></li>
+        <li><span class="unit-name">em</span> – <span class="unit-description">jednostka względna względem rozmiaru czcionki elementu nadrzędnego</span></li>
+        <li><span class="unit-name">rem</span> – <span class="unit-description">jednostka względna względem rozmiaru czcionki elementu root (html)</span></li>
+        <li><span class="unit-name">vw</span> – <span class="unit-description">1% szerokości widocznej części okna przeglądarki</span></li>
+        <li><span class="unit-name">vh</span> – <span class="unit-description">1% wysokości widocznej części okna przeglądarki</span></li>
+        <li><span class="unit-name">cm</span> – <span class="unit-description">centymetry</span></li>
+        <li><span class="unit-name">mm</span> – <span class="unit-description">milimetry</span></li>
+        <li><span class="unit-name">in</span> – <span class="unit-description">cale</span></li>
+        <li><span class="unit-name">pt</span> – <span class="unit-description">punkty (1 pt = 1/72 cala)</span></li>
+        <li><span class="unit-name">pc</span> – <span class="unit-description">pica (1 pica = 12 punktów)</span></li>
+    </ul>
+
+    <h2>2. Jednostki miary czasu</h2>
+    <ul>
+        <li><span class="unit-name">s</span> – <span class="unit-description">sekundy</span></li>
+        <li><span class="unit-name">ms</span> – <span class="unit-description">milisekundy</span></li>
+    </ul>
+
+    <h2>3. Jednostki miary dla kolorów</h2>
+    <ul>
+        <li><span class="unit-name">rgba()</span> – <span class="unit-description">Określa kolor za pomocą skali RGB z przezroczystością (alfa)</span></li>
+        <li><span class="unit-name">hsla()</span> – <span class="unit-description">Określa kolor za pomocą skali HSL z przezroczystością (alfa)</span></li>
+    </ul>
+
+    <h2>4. Jednostki miary kąta</h2>
+    <ul>
+        <li><span class="unit-name">deg</span> – <span class="unit-description">stopnie</span></li>
+        <li><span class="unit-name">rad</span> – <span class="unit-description">radiany</span></li>
+        <li><span class="unit-name">grad</span> – <span class="unit-description">grady</span></li>
+        <li><span class="unit-name">turn</span> – <span class="unit-description">pełne obroty (1 turn = 360 stopni)</span></li>
+    </ul>
+
+</body>
+</html>

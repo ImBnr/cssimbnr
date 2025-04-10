@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .pp {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego</h1>
+    <p>Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu lokalnego: Styl lokalny pozwala na nadanie formatowania pojedynczemu elementowi strony HTML. Formatowanie to stosuje się bezpośrednio w obrębie danego elementu, a nie do całej strony. Styl lokalny jest wprowadzany w tagu HTML, przy pomocy atrybutu style. Z użyciem stylu lokalnego formatowany jest tylko ten konkretny element, w którym zastosowano atrybut style. Na przykład, jeśli chcemy zmienić kolor tekstu w akapicie, stosujemy odpowiedni styl tylko do tego akapitu, nie wpływając na inne elementy strony.</p>
+    <h1>2. Składnia teoretyczna ( z użyciem ramki otaczającej→ może być tabela o jednej komórce, zastosuj „znaki specjalne” do napisania definicji stylu lokalnego tak aby instrukcja CSS nie wykonywała się a tylko wyświetlała wewnątrz ramki [& nbsp; spacja niełamana] przykład „znaku specjalnego”)</h1>
+    <p>Składnia teoretyczna (z użyciem ramki otaczającej → może być tabela o jednej komórce, zastosuj "znaki specjalne" do napisania definicji stylu lokalnego tak, aby instrukcja CSS nie wykonywała się, a tylko wyświetlała wewnątrz ramki [  spacja niełamana] → przykład "znaku specjalnego"): <br>
+        Aby wyświetlić definicję stylu lokalnego jako tekst (bez jego wykonania), należy użyć znaków specjalnych, które zapobiegają interpretacji tagów HTML przez przeglądarkę. Zamiast zwykłych znaków < i >, używamy ich odpowiedników w formie kodów HTML (& lt; i & gt;). Dodatkowo, jeżeli chcemy dodać spacje niełamane, używamy & nbsp;. Dzięki temu przeglądarka traktuje tekst jako zwykły ciąg znaków, który będzie widoczny na stronie, zamiast próbować go wykonać jako kod HTML.</p>
+    <h1>3. Co może być selektorem</h1>
+    <p>
+        <ul class="pp">
+            Co może być selektorem: Selektorem w stylu lokalnym może być dowolny znacznik HTML, czyli tag, który chcemy sformatować. Do najczęściej używanych selektorów należą:
+            <li>p (akapit)</li>
+            <li>h1, h2, h3 (nagłówki)</li>
+            <li>td (komórka tabeli)</li>
+            <li>span (element inline)</li>
+            <li>div (blokowy element kontenerowy)</li> 
+            i inne tagi HTML. Selektor określa, do którego elementu zastosować styl.
+        </ul>
+    </p>
+    <h1>4. Co wipisujemy jako "cechę". Jakie jest znaczenie średników</h1>
+    <p>Co wpisujemy jako "cechę". Jakie jest znaczenie średników: "Cechą" w deklaracji stylu (właściwością) jest atrybut, który definiuje konkretny aspekt stylu, np. color, font-size, background-color, border, font-family itd. Cechy określają, co konkretnie ma być zmienione w danym elemencie, np. kolor tekstu czy wielkość czcionki. <br> Znaczenie średników: Średnik w deklaracji CSS (w tym w stylu lokalnym) jest używany do oddzielania kolejnych cech (właściwości) w obrębie jednego elementu. Jeżeli mamy kilka cech do przypisania, każdą z nich kończymy średnikiem, z wyjątkiem ostatniej (chociaż dodanie średnika przed ostatnią cechą jest dozwolone i zalecane).</p>
+    <h1>5. Co wipisujemy jako "wartość" (w deklaracji stylu).</h1>
+    <p>Co wpisujemy jako "wartość" (w deklaracji stylu): Wartość (w deklaracji stylu) to dokładna wartość, którą przypisujemy do danej cechy (właściwości). Na przykład dla cechy color wartość może być określona za pomocą słów takich jak red, blue, albo w formacie szesnastkowym jak #31F4A5. Dla cechy font-size wartość może być np. 20px lub 1em.
+        <br>
+        Wartość ściśle zależy od cechy, po której stoi i powinna być zgodna z jej oczekiwanym typem.  Wartości mogą być liczbami, słowami, jednostkami (np. px, em, rem), kolorami, nazwami czcionek itp.</p>
+</body>
+</html>

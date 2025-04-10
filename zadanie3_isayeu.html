@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cechy HTML i CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cechy modyfikowania formatowania w HTML oraz CSS</h1>
+
+    <h2>1. Cechy HTML i CSS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Cechy</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Semantyka</td>
+                <td>Umożliwia strukturę dokumentu (np. nagłówki, akapity).</td>
+                <td>Definiuje wygląd i styl (np. kolory, czcionki).</td>
+            </tr>
+            <tr>
+                <td>Odpowiedzialność</td>
+                <td>Odpowiedzialny za treść i strukturę.</td>
+                <td>Odpowiedzialny za wygląd i układ.</td>
+            </tr>
+            <tr>
+                <td>Wielokrotne zastosowanie</td>
+                <td>Zawiera tylko treść, można wielokrotnie używać elementów w różnych miejscach.</td>
+                <td>Style mogą być stosowane wielokrotnie do różnych elementów.</td>
+            </tr>
+            <tr>
+                <td>Współpraca z JavaScript</td>
+                <td>HTML współpracuje z JavaScript przy manipulacji DOM.</td>
+                <td>CSS nie ma zaawansowanej funkcji interakcji, ale może zmieniać wygląd dynamicznie przez klasy.</td>
+            </tr>
+            <tr>
+                <td>Złożoność</td>
+                <td>Zawiera podstawową strukturę, ale ma ograniczoną możliwość wpływania na wygląd.</td>
+                <td>Bardziej rozbudowany i elastyczny w kwestii formatowania.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Nowe możliwości CSS w porównaniu z HTML</h2>
+    <ol>
+        <li><strong>Flexbox i Grid</strong> – CSS wprowadza systemy układu, które pozwalają na bardziej zaawansowane i elastyczne zarządzanie pozycjonowaniem elementów.</li>
+        <li><strong>Animacje i przejścia (Transitions/Animations)</strong> – CSS umożliwia tworzenie płynnych animacji i efektów przejściowych między stanami elementów.</li>
+        <li><strong>Zmienne CSS</strong> – Możliwość deklarowania zmiennych w CSS, co ułatwia zarządzanie kolorami, fontami itp.</li>
+        <li><strong>Media Queries</strong> – CSS umożliwia dostosowanie wyglądu strony do różnych urządzeń (np. responsywność strony).</li>
+        <li><strong>Pseudo-klasy i pseudo-elementy</strong> – CSS pozwala na zastosowanie stylów na elementach w specyficznych stanach (np. :hover, :focus) oraz na tworzenie wirtualnych elementów (np. ::before, ::after).</li>
+        <li><strong>Transformacje</strong> – CSS umożliwia wykonywanie różnych transformacji na elementach (np. obracanie, skalowanie, przesuwanie).</li>
+        <li><strong>Shadow DOM</strong> – Dzięki CSS można pracować z elementami zawartymi w shadow DOM, co umożliwia lepszą izolację stylów.</li>
+        <li><strong>Funkcje matematyczne i kalkulacje</strong> – CSS pozwala na obliczanie wartości, np. za pomocą funkcji calc(), co daje większą elastyczność w tworzeniu responsywnych układów.</li>
+    </ol>
+
+    <h2>3. Wady CSS</h2>
+    <ol>
+        <li><strong>Trudności w debugowaniu</strong> – Bardzo rozbudowane style mogą prowadzić do trudności w znalezieniu błędów, szczególnie w dużych projektach.</li>
+        <li><strong>Brak wsparcia dla złożonej logiki</strong> – CSS nie posiada możliwości programowania logiki (np. warunków), co ogranicza jego funkcjonalność w bardziej dynamicznych sytuacjach.</li>
+        <li><strong>Kompatybilność przeglądarek</strong> – Starsze wersje przeglądarek mogą nie obsługiwać niektórych funkcji CSS (np. flexbox, grid), co może prowadzić do problemów z wyświetlaniem.</li>
+        <li><strong>Brak kontroli nad treścią</strong> – CSS wpływa tylko na wygląd, ale nie pozwala na modyfikację struktury dokumentu HTML.</li>
+        <li><strong>Złożoność przy dużych projektach</strong> – W miarę jak projekt rośnie, zarządzanie dużą liczbą reguł CSS może stać się uciążliwe i wymaga odpowiedniego porządkowania.</li>
+        <li><strong>Niedoskonała obsługa układów</strong> – Choć CSS umożliwia tworzenie elastycznych układów, mogą występować problemy w skomplikowanych układach, zwłaszcza gdy wymagają one precyzyjnego rozmieszczania elementów.</li>
+    </ol>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby Definiowania Kolorów</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sposoby Definiowania Kolorów w CSS</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Typ Definicji</th>
+                <th>Przykład</th>
+                <th>Opis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Definicja Heksadecymalna</td>
+                <td><code>color: #FFFFFF;</code></td>
+                <td>Kolor jest określony za pomocą sześciu znaków, gdzie dwie pierwsze liczby reprezentują czerwony, kolejne dwie zielony, a ostatnie dwie niebieski kolor. Wartości mogą wynosić od 00 do FF (hex).</td>
+            </tr>
+            <tr>
+                <td>Definicja RGB</td>
+                <td><code>color: rgb(255, 100, 13);</code></td>
+                <td>Kolor jest określony za pomocą trzech liczb, gdzie pierwsza liczba to czerwony (R), druga zielony (G), a trzecia niebieski (B). Wartości mieszczą się w zakresie 0–255.</td>
+            </tr>
+            <tr>
+                <td>Definicja Nazwy Koloru</td>
+                <td><code>color: red;</code></td>
+                <td>Kolor jest określony za pomocą jednej z nazw kolorów, takich jak: red, green, blue, yellow, etc.</td>
+            </tr>
+            <tr>
+                <td>Definicja RGB z Nasyceniem</td>
+                <td><code>color: rgb(10%, 40%, 78%);</code></td>
+                <td>Kolor jest określony za pomocą procentowego nasycenia dla czerwonego, zielonego i niebieskiego. Wartości procentowe mieszczą się w zakresie od 0% do 100%.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
