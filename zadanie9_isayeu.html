@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zewnętrzny Arkusz Stylów</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zewnętrzny Arkusz Stylów</h1>
+
+    <h2>1) Składnia teoretyczna (otoczona ramką, wcięcia)</h2>
+    <pre>
+<head>
+    (...)
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    (...)
+</head>
+    </pre>
+    <p>Składnia teoretyczna wskazuje, że dołączanie zewnętrznego arkusza stylów odbywa się poprzez tag <code>&lt;link&gt;</code>, który znajduje się w sekcji nagłówka dokumentu <code>&lt;head&gt;</code>. Warto pamiętać o odpowiednich wcięciach i zachowaniu struktury dokumentu HTML.</p>
+
+    <h2>2) Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować w dokumencie?</h2>
+    <p>Styl zewnętrzny wstawia się w części nagłówkowej dokumentu, pomiędzy znacznikami <code>&lt;head&gt;</code> a <code>&lt;/head&gt;</code>. Znacznik <code>&lt;link rel="stylesheet"&gt;</code> jest odpowiedzialny za dołączenie arkusza stylów. W dokumencie HTML może występować dowolna liczba takich znaczników, każdy z innym plikiem CSS.</p>
+
+    <h2>3) Jak jest najprostsza forma wstawiania stylu zewnętrznego?</h2>
+    <pre>
+&lt;head&gt;
+    (...)
+    &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;
+    (...)
+&lt;/head&gt;
+    </pre>
+    <p>Najprostsza forma wstawiania stylu zewnętrznego polega na umieszczeniu w nagłówku dokumentu tagu <code>&lt;link rel="Stylesheet"&gt;</code>, wskazującego plik zewnętrznego arkusza stylów (np. <code>style.css</code>).</p>
+
+    <h2>4) Ile arkuszy stylów może być dołączanych do jednego dokumentu HTML oraz jaka zasada musi być zachowana przy większej ilości dołączanych styli?</h2>
+    <p>Do jednego dokumentu HTML może być dołączanych dowolna liczba arkuszy stylów. W przypadku większej ilości arkuszy, ważniejsze będą te, które są dołączone później w kodzie. Oznacza to, że arkusz stylów załadowany później nadpisuje te same style zdefiniowane wcześniej w innym arkuszu.</p>
+
+    <h2>5) Co się dzieje w przypadku konfliktów?</h2>
+    <p>W przypadku konfliktów, czyli gdy te same style są definiowane w różnych arkuszach stylów dołączonych do tego samego dokumentu, reguły CSS z arkusza, który został załadowany później, mają wyższy priorytet i będą miały zastosowanie.</p>
+
+    <h2>6) Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h2>
+    <p>Pliki arkuszy stylów z użyciem edytora tekstowego są tworzone jako zwykłe pliki tekstowe. Do ich tworzenia i edytowania wystarczy użyć prostego edytora tekstowego, takiego jak Notatnik lub dowolny inny edytor, który pozwala na zapisanie pliku z rozszerzeniem <code>.css</code>.</p>
+
+    <h2>7) Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h2>
+    <p>Pliki arkuszy stylów można również tworzyć i edytować w specjalnych edytorach CSS, takich jak Visual Studio Code, Sublime Text, czy Atom. Takie edytory oferują zaawansowane funkcje, takie jak autouzupełnianie kodu, podświetlanie składni i inne narzędzia ułatwiające pracę z CSS.</p>
+
+    <h2>8) Jakie rozszerzenie posiada plik będący zewnętrznym arkuszem stylów?</h2>
+    <p>Plik będący zewnętrznym arkuszem stylów musi mieć rozszerzenie <code>.css</code>, co pozwala na jego rozpoznanie jako plik CSS, który zawiera reguły formatowania.</p>
+
+    <h2>9) Jakie są zalety zewnętrznego arkusza stylów? (dwie zalety)</h2>
+    <ul>
+        <li>Wszystkie strony w obrębie całego serwisu mogą mieć wspólne cechy, co zapewnia spójność wizualną.</li>
+        <li>W przypadku zmiany stylu, np. czcionki, wystarczy zmodyfikować tylko jeden plik CSS, zamiast edytować każdą stronę z osobna.</li>
+    </ul>
+
+    <h2>10) Uwagi na temat pisania w CSS</h2>
+    <p>Podczas pisania CSS ważne jest przestrzeganie odpowiedniej składni, takich jak stosowanie średników do oddzielania deklaracji, używanie właściwych selektorów oraz odpowiednich wartości dla cech. Zaleca się również komentowanie kodu, aby ułatwić jego późniejszą edycję i utrzymanie.</p>
+
+</body>
+</html>

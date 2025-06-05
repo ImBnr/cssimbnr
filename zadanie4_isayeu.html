@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pięć Sposobów z Obramowaniami i Tekstami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            margin: 20px 0;
+        }
+        .border-box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .single-cell-table {
+            border: 2px solid black;
+            width: 50%;
+            margin: 20px 0;
+        }
+        .single-cell-table td {
+            padding: 20px;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pięć sposobów z obramowaniami i tekstami</h1>
+
+    <div class="container">
+        <h2>1. Obramowanie div</h2>
+        <div class="border-box">
+            <p><span class="underline">Podkreślony tekst</span> oraz <span class="bold">pogrubiony tekst</span> w obramowanym divie.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>2. Obramowanie w tabeli jednokomórkowej</h2>
+        <table class="single-cell-table">
+            <tr>
+                <td><span class="underline">Podkreślony tekst</span> oraz <span class="bold">pogrubiony tekst</span> w tabeli jednokomórkowej.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>3. Pole tekstowe - Textarea</h2>
+        <textarea placeholder="Wpisz tekst tutaj..."></textarea>
+    </div>
+
+    <div class="container">
+        <h2>4. Tekst w polu textarea z podkreśleniem i pogrubieniem</h2>
+        <textarea readonly>
+            <span class="underline">Podkreślony tekst</span>
+            <span class="bold">Pogrubiony tekst</span>
+        </textarea>
+    </div>
+
+    <div class="container">
+        <h2>5. Obramowanie w formacie inline</h2>
+        <span style="border: 2px solid black; padding: 5px; display: inline-block;">
+            <span class="underline">Podkreślony tekst</span> oraz <span class="bold">pogrubiony tekst</span> w obramowaniu inline.
+        </span>
+    </div>
+
+</body>
+</html>

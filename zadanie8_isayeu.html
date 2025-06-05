@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wewnętrzny Arkusz Stylów</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wewnętrzny Arkusz Stylów</h1>
+
+    <h2>1) Gdzie jest wstawiany?</h2>
+    <p>Wewnętrzny arkusz stylów wstawia się zawsze w części nagłówkowej dokumentu, pomiędzy znacznikami <code>&lt;head&gt;</code> a <code>&lt;/head&gt;</code>. Jest stosowany, gdy elementy, które chcemy formatować, występują wielokrotnie na stronie i chcemy nadać im jednolite atrybuty (inne niż domyślne).</p>
+
+    <h2>2) Składnia teoretyczna (w ramce, konieczne wcięcia)</h2>
+    <pre>
+<head>
+    (...)
+    <style type="text/css">
+        /* <![CDATA[ */
+        selektor1 { cecha: wartość; cecha2: wartość2... }
+        selektor2 { cecha: wartość; cecha2: wartość2... }
+        (...)
+        /* ]]> */
+    </style>
+    (...)
+</head>
+    </pre>
+    <p>W składni teoretycznej wewnętrznego arkusza stylów stosujemy odpowiednie wcięcia, aby poprawnie oddzielić definicje poszczególnych selektorów i cech. Komentarze w CSS są zawarte między <code>/* <![CDATA[ */</code> a <code>/* ]]> */</code>, co zapobiega problemom z interpretacją w niektórych przeglądarkach.</p>
+
+    <h2> 3) Jakie mogą być selektory?</h2>
+    <p>Selektorem może być praktycznie dowolny znacznik HTML, taki jak:</p>
+    <ul>
+        <li><code>p</code> (akapit)</li>
+        <li><code>h1</code>, <code>h2</code>, <code>h3</code>, ... (nagłówki)</li>
+        <li><code>td</code> (komórka tabeli)</li>
+        <li><code>div</code>, <code>span</code> (inne elementy HTML)</li>
+    </ul>
+    <p>Selektor określa, do jakich elementów na stronie zostanie zastosowany arkusz stylów.</p>
+
+    <h2>4) Jakie mogą być cechy i wartości?</h2>
+    <p>Cechy (właściwości) w CSS to konkretne atrybuty formatowania, takie jak:</p>
+    <ul>
+        <li><code>color</code> (kolor tekstu)</li>
+        <li><code>font-size</code> (rozmiar czcionki)</li>
+        <li><code>background-color</code> (kolor tła)</li>
+        <li><code>margin</code>, <code>padding</code> (marginesy i wypełnienie)</li>
+        <li><code>font-family</code> (rodzina czcionek)</li>
+        <li><code>text-align</code> (wyrównanie tekstu)</li>
+    </ul>
+    <p>Wartości dla tych cech mogą być różne, np.:</p>
+    <ul>
+        <li>Dla <code>color</code>: <code>red</code>, <code>blue</code>, <code>#FF5733</code> (kolory)</li>
+        <li>Dla <code>font-size</code>: <code>16px</code>, <code>1em</code>, <code>120%</code></li>
+        <li>Dla <code>background-color</code>: <code>yellow</code>, <code>#FFFFFF</code></li>
+    </ul>
+    <p>Wartości muszą być odpowiednio dopasowane do cechy, którą chcemy ustawić. Na przykład dla cechy <code>font-size</code> wartość będzie określona w jednostkach takich jak <code>px</code>, <code>em</code>, <code>%</code>, a dla <code>color</code> - nazwa koloru lub kod szesnastkowy.</p>
+
+</body>
+</html>
